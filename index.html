@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
+         @font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
          .body{
             height: 350px;
             width: 300px;
@@ -36,11 +42,23 @@
         .bt-1{
             background-color: red;
         }
+        .input{
+            background-color: #A1AF77;
+            text-align: right;
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+            font-size: 30px;
+            padding: 7px 10px;
+            margin-bottom:20px ;
+            font-family: "DS-Digital Normal";
+        }
     </style>
 </head>
 <body>
     
     <div class="body">
+        <input type="text" value="0" class="input"/>
         <div class="btn">
             <button class="btn1">^</button>
             <button class="btn1">7</button>
